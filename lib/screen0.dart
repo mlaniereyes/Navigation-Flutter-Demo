@@ -15,13 +15,14 @@ class Screen0 extends StatelessWidget {
               color: Colors.red,
               child: Text('Go To Screen 1'),
               onPressed: () {
-                //Navigate to Screen 1
+                Navigator.pushNamed(context, '/first');
               },
             ),
             RaisedButton(
               color: Colors.blue,
               child: Text('Go To Screen 2'),
               onPressed: () {
+                Navigator.pushNamed(context, '/second');
                 //Navigate to Screen 2
               },
             ),
